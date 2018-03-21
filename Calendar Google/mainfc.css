@@ -1,0 +1,70 @@
+
+  body {
+    
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+         
+  }
+
+  #top,
+  #calendar.fc-unthemed {
+    font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+  }
+
+  #top {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 12px;
+    color: #000;
+  }
+
+  #top .selector {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  #top select {
+    font: inherit; /* mock what Boostrap does, don't compete  */
+  }
+
+  .left { float: left }
+  .right { float: right }
+  .clear { clear: both }
+
+  #calendar {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+.fc-day-grid-event .fc-content {
+    white-space: normal;
+    word-wrap: break-word;
+}
+.fc-unthemed td.fc-today {
+    background: #00000059;
+}
+.fc th, .fc-basic-view td.fc-week-number, .fc-icon, .fc-toolbar {
+    text-align: center;
+    background-color: #AF2626;
+    color: white;
+}
+#calendar{
+    width: 100%;
+
+}
+h2{
+    font-family: "Arial Black";
+    text-transform: uppercase;
+}
+th{
+    font-family: "Arial Bold";
+     text-transform: uppercase;
+}
+.fc-event {
+    font-family: "Arial Narrow";
+    font-size: 1.1em;
+}
+

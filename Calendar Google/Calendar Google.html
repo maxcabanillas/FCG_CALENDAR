@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
+<link href='fullcalendar.min.css' rel='stylesheet' />
+    
+<!--<link href='../fullcalendar.print.min.css' rel='stylesheet' media='print' />-->
+<script src='lib/moment.min.js'></script>
+<script src='lib/jquery.min.js'></script>
+<script src='fullcalendar.min.js'></script>
+<script src='js/theme-chooser.js'></script>
+<script src='gcal.min.js'></script>
+    <script src='locale/es.js'></script>
+<script>
+
+  $(document).ready(function() {
+
+    initThemeChooser({
+
+      init: function(themeSystem) {
+
+       $('#calendar').fullCalendar({
+
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,listYear'
+      },
+    
+      displayEventTime: true, // don't show the time column in list view
+
+      // THIS KEY WON'T WORK IN PRODUCTION!!!
+      // To make your own Google API key, follow the directions here:
+      // http://fullcalendar.io/docs/google_calendar/
+           //API Key del calendario o la cuenta
+         googleCalendarApiKey: 'AIzaSyCQtL3uOHAolDU_7Pj5EUzxP-aPEscYMxU',
+     // googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+
+
+           
+      // ID del calendar
+      events: 'fcg.com.mx_iejh3nt81as9icqudiu9pu1v58@group.calendar.google.com',
+
+      
+
+    });
+}
+    });
+});
+
+</script>
+
+    <link href='mainfc.css' rel='stylesheet' />
+</head>
+<body>
+
+   <div id='calendar' ></div>
+
+</body>
+</html>
